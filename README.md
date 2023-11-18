@@ -18,6 +18,7 @@ At the time of writing this, this only has support for a few subjects. More will
 
 Compiling this into distributals like a .exe, .app, or a linux app would be good, or at the very least adding a script for each os to allow non tech-savvy people to launch the application easily.
 
+
 # Use instructions
 
 ## For Windows
