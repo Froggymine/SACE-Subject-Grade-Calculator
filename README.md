@@ -12,7 +12,7 @@
      ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀
 
 # SACE-Subject-Grade-Calculator
-A python script to calculate a single subject's overall/end of year grade for SACE subjects.
+A python script to calculate a single subject's overall/end of year grade for SACE subjects. How to use instructions at the bottom
 
 WARNING: The weightings in the current version of the script may not be accurate to the future, so either check or use with caution. It should be fine for a few years though.
 
