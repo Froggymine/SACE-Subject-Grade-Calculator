@@ -61,7 +61,7 @@ print("    A+ E B- B C")
 
 print("\n--------------------------------------------")
 
-print("\nGrades for type: " + selected_subject[0][0])
+print("\nGrade(s) for type: " + selected_subject[0][0])
 grades1 = input("Enter: ").split()
 if selected_subject[0][1] != "N/A":
     print("\nGrade(s) for type: " + selected_subject[0][1])
