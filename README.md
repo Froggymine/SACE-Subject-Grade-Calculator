@@ -5,7 +5,9 @@ WARNING: The weightings in the current version of the script may not be accurate
 
 ## Use cases
 This can be useful for two main reasons:
+
 1: Having done a portion of a subject, determining what scores are needed to get the final grade you desire.
+
 2: With a rough knowledge of how you've done on, say, an exam, how well the overall grade will be.
 
 ## What it does and doesn't take into account
