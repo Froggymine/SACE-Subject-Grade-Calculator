@@ -14,4 +14,17 @@ This can be useful for two main reasons:
 This script will take into account the weighting of each assesment type, and will do the averaging and conversions. However, this will not take into account moderation changes and scaling factors. Therefore, this should not be used as the final definitive source on what your final grade will be.
 
 ## Future updates
-At the time of writing this, this only has support for a few subjects. More will be needed to be added. This would be good to seperate into a different file for ease of update as SACE changes. Compiling this into distributals like a .exe, .app, or a linux app would be good.
+At the time of writing this, this only has support for a few subjects. More will be needed to be added. This would be good to seperate into a different file for ease of update as SACE changes. 
+
+Compiling this into distributals like a .exe, .app, or a linux app would be good, or at the very least adding a script for each os to allow non tech-savvy people to launch the application easily.
+
+# Use instructions
+
+## For Windows
+*Add Description*
+
+## For MacOS
+Open the terminal app either through spotlight or through launching the app inside the utilties folder inside the applications folder. Then navigate (use online tutorial) to the app, and enter `python SACEgradeCalculator.py` to run it
+
+## For Linux
+If you're using this you must know how to use the terminal. Run `python SACEgradeCalculator.py` in the same directory as the script.
