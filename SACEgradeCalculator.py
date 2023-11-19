@@ -57,7 +57,7 @@ print("\n--------------------------------------------")
 
 print("\nFor the following, input grades on one line")
 print("seperated with a space like such:\n")
-print("    A+ E B- B C")
+print("    Enter: A+ E B- B C")
 
 print("\n--------------------------------------------")
 
