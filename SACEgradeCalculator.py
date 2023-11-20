@@ -62,13 +62,13 @@ print("    Enter: A+ E B- B C")
 print("\n--------------------------------------------")
 
 print("\nGrade(s) for type: " + selected_subject[0][0])
-grades1 = input("Enter: ").split()
+grades1 = input("Enter: ").upper().split()
 if selected_subject[0][1] != "N/A":
     print("\nGrade(s) for type: " + selected_subject[0][1])
-    grades2 = input("Enter: ").split()
+    grades2 = input("Enter: ").upper().split()
 if selected_subject[0][2] != "N/A":
     print("\nGrade(s) for type: " + selected_subject[0][2])
-    grades3 = input("Enter: ").split()
+    grades3 = input("Enter: ").upper().split()
 
 # -------------------------
 #       Calculations

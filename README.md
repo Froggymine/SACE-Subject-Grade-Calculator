@@ -36,7 +36,7 @@ Compiling this into distributals like a .exe, .app, or a linux app would be good
 
 # Use instructions
 
-The easy way to run the program is through the github releases section on the right of the github screen. Download and run the file designated for your operating system. Alternativly, you can download the source code, and run `python SACEgradeCalculator.py` in your command line in the same folder as the source code.
+The easy way to run the program is through the github releases section on the right of the github screen. Download and run the file designated for your operating system. Alternativly, you can download the source code, and run `python3 SACEgradeCalculator.py` in your command line in the same folder as the source code.
 
 # Developer Info
 
