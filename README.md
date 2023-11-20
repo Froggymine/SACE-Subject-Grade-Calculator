@@ -36,14 +36,7 @@ Compiling this into distributals like a .exe, .app, or a linux app would be good
 
 # Use instructions
 
-## For Windows
-*Add Description*
-
-## For MacOS
-Open the terminal app either through spotlight or through launching the app inside the utilties folder inside the applications folder. Then navigate (use online tutorial) to the app, and enter `python SACEgradeCalculator.py` to run it
-
-## For Linux
-If you're using this you surely know how to use the terminal. Run `python SACEgradeCalculator.py` in the same directory as the script.
+The easy way to run the program is through the github releases section on the right of the github screen. Download and run the file designated for your operating system. Alternativly, you can download the source code, and run `python SACEgradeCalculator.py` in your command line in the same folder as the source code.
 
 # Developer Info
 
