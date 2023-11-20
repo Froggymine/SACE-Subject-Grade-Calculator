@@ -1,4 +1,5 @@
 import math
+import csv
 
 # ---------------------
 #       Constants
@@ -22,10 +23,13 @@ gradenums = {
 
 grades_list = ["E-","E","E+","D-","D","D+","C-","C","C+","B-","B","B+","A-","A","A+"]
 
-subjects = {
-    "physics": [["SATs", "Investigation Folios", "Exam"],[0.4, 0.3, 0.3]],
-    "math methods": [["SATs", "Mathmatical Investigation", "Exam"],[0.5, 0.2, 0.3]],
-}
+subjects = {}
+
+with open("subjects.csv") as csv_file:
+	csv_reader = csv.reader(csv_file, delimiter = ",")
+	line_count = 0
+	for row in csv_reader:
+		subjects.update({row[0]: [[row[1], row[2], row[3]], [float(row[4]), float(row[5]), float(row[6])]]})
 
 # -------------------
 #        Input
@@ -47,7 +51,7 @@ print("             SACE Grade Calculator            ")
 print("                                              ")
 
 print("Avalible Subjects: " + ", ".join(list(subjects.keys())))
-selected_subject = subjects[input("Enter Subject: ")]
+selected_subject = subjects[input("Enter Subject: ").lower()]
 
 grades1_weight = selected_subject[1][0]
 grades2_weight = selected_subject[1][1]
@@ -77,24 +81,24 @@ grades1_num = 0
 for i in grades1:
     grades1_num += gradenums[i]
 grades1_num = grades1_num / len(grades1)
-
-grades2_num = 0
-for i in grades2:
-    grades2_num += gradenums[i]
-grades2_num = grades2_num / len(grades2)
-
-grades3_num = 0
-for i in grades3:
-    grades3_num += gradenums[i]
-grades3_num = grades3_num / len(grades3)
-
 grades1_num *= grades1_weight
-grades2_num *= grades2_weight
-grades3_num *= grades3_weight
+
+if selected_subject[0][1] != "N/A":
+	grades2_num = 0
+	for i in grades2:
+    		grades2_num += gradenums[i]
+	grades2_num = grades2_num / len(grades2)
+	grades2_num *= grades2_weight
+
+if selected_subject[0][2] != "N/A":
+	grades3_num = 0
+	for i in grades3:
+	    grades3_num += gradenums[i]
+	grades3_num = grades3_num / len(grades3)
+	grades3_num *= grades3_weight
+
 
 final_grade = grades1_num + grades2_num + grades3_num
-
-# I've tried so much but there is always stuff like 7.800000000000001 whyyyyyyyyy
 
 print("\n--------------------------------------------")
 print("--------------- Calculations ---------------\n")
