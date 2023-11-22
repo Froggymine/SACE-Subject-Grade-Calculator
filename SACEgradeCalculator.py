@@ -21,8 +21,6 @@ gradenums = {
     "A+": 15
 }
 
-grades_list = ["E-","E","E+","D-","D","D+","C-","C","C+","B-","B","B+","A-","A","A+"]
-
 subjects = {}
 
 with open("subjects.csv") as csv_file:
@@ -51,7 +49,13 @@ print("             SACE Grade Calculator            ")
 print("                                              ")
 
 print("Avalible Subjects: " + ", ".join(list(subjects.keys())))
-selected_subject = subjects[input("Enter Subject: ").lower()]
+
+correct_input = False
+while not correct_input:
+	selected_subject = input("Enter Subject: ").lower()
+	if selected_subject in subjects:
+		correct_input = True
+selected_subject = subjects[selected_subject]
 
 grades1_weight = selected_subject[1][0]
 grades2_weight = selected_subject[1][1]
@@ -111,4 +115,4 @@ print("Score out of 100:               " + str(round((final_grade/15)*100)) + "/
 
 print("Final average grade:            " + str(list(gradenums.keys())[list(gradenums.values()).index(round(final_grade))]) + "\n")
 
-input("\nPress ENTER to close")
+input("\nPress ENTER to close ")
