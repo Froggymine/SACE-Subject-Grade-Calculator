@@ -43,5 +43,3 @@ The easy way to run the program is through the github releases section on the ri
 First off, adding something from the *Future Updates* section would be very appreciated. The main thing needed though is to add more subjects. Note that if a subject has less that 3 assesment types, the two last ones can be replaced with exactly "N/A" with a weighting of 0 to remove them on the user's side.
 
 This is built using pyinstaller through `pyinstaller -F SACEgradeCalculator.py`
-
-<meta name="google-site-verification" content="7b9T27fqZj3q_saKZpUhspMh0V0eeFfNzRYWuZyw4OY" />
